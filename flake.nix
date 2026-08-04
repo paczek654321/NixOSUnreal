@@ -22,7 +22,10 @@
       scripts = import ./scripts { inherit pkgs lib cfg; unrealFHS = modules.unrealFHS; };
 
     in {
-      packages.${system}.default = modules.unrealFHS;
+      packages.${system} = {
+		default = modules.unrealFHS;
+		run-unreal = scripts.runUnrealScript;
+	  };
       apps.${system} = {
         default      = { type = "app"; program = "${scripts.runUnrealScript}/bin/run-unreal"; };
         run-unreal   = { type = "app"; program = "${scripts.runUnrealScript}/bin/run-unreal"; };
