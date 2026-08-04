@@ -151,7 +151,7 @@ in {
     xdg-desktop-portal-gtk
     kdePackages.xdg-desktop-portal-kde
     qt6.qtbase
-    libsForQt5.qt5.qtbase
+    qt5.qtbase
     harfbuzz
     pixman
     fribidi
