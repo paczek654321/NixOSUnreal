@@ -49,8 +49,6 @@ in {
     llvmPackages_20.libcxx
     llvmPackages_20.libclang.lib
     lld_20
-    glibc.dev
-    linuxHeaders
     gnumake
     cairo
     curl
