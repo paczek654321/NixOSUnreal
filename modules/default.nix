@@ -5,7 +5,7 @@ let
 
   inherit (pkgsModule)
     debugTools audioTools gpuTools devTools vulkanStuff
-    videoTools ideTools waylandStuff xorgStuff basicStuff toolboxLibs;
+    videoTools ideTools waylandStuff xorgStuff basicStuff;
 
   coreModule = import ./core.nix { inherit pkgs lib; dotnetPkg = pkgsModule.dotnetPkg; };
 in
@@ -23,7 +23,6 @@ in
       ++ waylandStuff
       ++ xorgStuff
       ++ basicStuff
-      ++ toolboxLibs
       ++ extraFHSPkgs
     );
 

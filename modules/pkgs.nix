@@ -161,37 +161,4 @@ in {
     gmp
     p11-kit
   ];
-
-  # Libraries for JetBrains Toolbox
-  # Source: https://nixos.wiki/wiki/Jetbrains_Tools
-  toolboxLibs = with pkgs; [
-    at-spi2-atk
-    at-spi2-core
-    cups
-    dbus-glib
-    desktop-file-utils
-    e2fsprogs
-    fuse
-    fuse3
-    gst_all_1.gstreamer
-    gst_all_1.gst-plugins-base
-    gst_all_1.gst-plugins-ugly
-    gtk2
-    keyutils.lib
-    libayatana-appindicator
-    libcaca
-    libcanberra
-    libcap
-    libdbusmenu
-    libgcrypt
-    libgpg-error
-    libidn
-    libjpeg
-    libpng12
-    libtiff
-    libudev0-shim
-    libusb1
-    libvpx
-    tbb
-  ];
 }
