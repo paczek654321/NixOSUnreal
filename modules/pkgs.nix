@@ -178,7 +178,7 @@ in {
     gst_all_1.gst-plugins-ugly
     gtk2
     keyutils.lib
-    libappindicator-gtk2
+    libayatana-appindicator
     libcaca
     libcanberra
     libcap
